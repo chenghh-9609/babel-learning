@@ -1,0 +1,21 @@
+{
+  "plugins": [
+    [
+      "@babel/plugin-transform-runtime",  //避免污染全局，通常在开发工具库时使用
+      {
+        "corejs": false, //runtime 设置 false 不转译api。
+        "helpers": true, //减少重复代码
+        "regenerator": false //是否将polyfill设置为全局
+      }
+    ]
+  ],
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "corejs": 3,  //core-js 设置转译api
+        "useBuiltIns": "usage"  //core-js 使用最新版本按需引入
+      }
+    ]
+  ]
+}

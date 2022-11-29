@@ -1,0 +1,25 @@
+{
+  "name": "babel-learning",
+  "version": "1.0.0",
+  "description": "Babel是一个JS编译器，主要用于将ES6+版本的代码转换为向后兼容的JS语法，以便能在当前和旧版浏览器或其他环境中运行。",
+  "main": "index.js",
+  "scripts": {
+    "compiler": "babel src --out-dir lib",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.20.2",
+    "@babel/plugin-transform-runtime": "^7.19.6",
+    "@babel/preset-env": "^7.20.2",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.0"
+  },
+  "dependencies": {
+    "@babel/runtime-corejs3": "^7.20.6",
+    "core-js": "^3.26.1"
+  }
+}
